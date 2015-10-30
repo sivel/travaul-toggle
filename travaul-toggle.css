@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.switch-icon .on {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxM3B4IiB2aWV3Qm94PSIwIDAgMTQgMTMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0IDEzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMy45MDQsMi4xMzVDMTQuMDg1LDEuODUsMTQsMS40NiwxMy43MTgsMS4yNzZsLTEuODAyLTEuMTgxYy0wLjI4My0wLjE4Mi0wLjY2Mi0wLjA5Ny0wLjg0NCwwLjE4OA0KCWwtNS4xOCw4LjI3MUM1LjcxLDguODQ0LDUuMzMzLDguOTMsNS4wNTEsOC43NDNMMi4xMDUsNi44MDVDMS44MjYsNi42MjQsMS40NDIsNi43MDQsMS4yNjMsNi45OTNMMC4wOTksOC44NTINCgljLTAuMTg2LDAuMjg3LTAuMTAyLDAuNjc4LDAuMTc4LDAuODZsNC42MTQsMy4wNmMwLjI4MywwLjE4NiwwLjc4MSwwLjI3NywxLjExMiwwLjIwM2wwLjY5LTAuMTUyDQoJYzAuMzI4LTAuMDY5LDAuNzQ2LTAuMzY1LDAuOTI0LTAuNjU1TDEzLjkwNCwyLjEzNXoiLz4NCjwvc3ZnPg0K);
+}
+
+.switch-icon .off {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTMuNDQzcHgiIGhlaWdodD0iMTMuNDkzcHgiIHZpZXdCb3g9IjAgMCAxMy40NDMgMTMuNDkzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMy40NDMgMTMuNDkzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFOUU5RTkiIGQ9Ik0wLjA4MywyLjcxOGwzLjA5OSwzLjA5OGMwLjI0OCwwLjI0OCwwLjM4NSwwLjU3OCwwLjM4NSwwLjkzNGMwLDAuMzU0LTAuMTM3LDAuNjg0LTAuMzg1LDAuOTMybC0zLjEsMy4wOTgNCgljLTAuMTA4LDAuMTA5LTAuMTA5LDAuMjk1LDAsMC40MDJsMi4yMDgsMi4yMDdjMC4xNDMsMC4xNDEsMC4yNTksMC4xNDEsMC40MDEsMGwzLjA5OC0zLjA5OGMwLjI0OS0wLjI0OCwwLjU4LTAuMzg3LDAuOTM0LTAuMzg3DQoJYzAuMzUzLDAsMC42ODQsMC4xMzksMC45MzIsMC4zODdsMy4wOTksMy4wOThjMC4xNDIsMC4xNDEsMC4yNTksMC4xNDEsMC40MDIsMGwyLjIwNy0yLjIwN2MwLjEwOC0wLjEwNywwLjEwOC0wLjI5MywwLTAuNDAyDQoJbC0zLjA5OS0zLjA5OGMtMC41MTQtMC41MTQtMC41MTQtMS4zNSwwLTEuODY1bDMuMDk5LTMuMDk4YzAuMTA4LTAuMTA5LDAuMTA4LTAuMjkzLDAtMC40MDRsLTIuMjA4LTIuMjA1DQoJYy0wLjE0My0wLjE0NS0wLjI2LTAuMTQ1LTAuNDAxLDBsLTMuMSwzLjA5OGMtMC40OTUsMC40OTgtMS4zNjcsMC40OTgtMS44NjMsMEwyLjY5MSwwLjEwOGMtMC4xNDQtMC4xNDYtMC4yNTktMC4xNDMtMC40LDANCglMMC4wODIsMi4zMTVDLTAuMDI3LDIuNDI1LTAuMDI3LDIuNjA4LDAuMDgzLDIuNzE4eiIvPg0KPC9zdmc+DQo=);
+}
+
+.switch .switch-inner, .switch-icon .switch-inner {
+    display: inline-block;
+    width: 80px;
+    height: 32px;
+    margin-right: 1em;
+    padding: 3px 3px 3px 4px;
+    vertical-align: middle;
+    overflow: visible;
+    background-color: #E2E1E2;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.switch .switch-inner span, .switch-icon .switch-inner span {
+    width: 36px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: #A5A4A4;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2.2;
+}
+
+.switch span, .switch-icon span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.switch .label, .switch-icon .label {
+    vertical-align: middle;
+    font-size: 16px;
+    color: #8d8d8d;
+    display: inline-block;
+}
+
+.label--small.switch .label, .label--small.switch-icon .label {
+    width: 7em;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.switch .on, .switch-icon .on {
+    display: none;
+    margin-left: 0;
+}
+
+.switch .off, .switch-icon .off {
+    margin-left: 36px;
+}
+
+.active.switch .switch-inner, .active.switch-icon .switch-inner {
+    background-color: #B8D6B9;
+}
+
+.active.switch .switch-inner span, .active.switch-icon .switch-inner span {
+    background-color: #3BA85D;
+}
+
+.active.switch .on, .active.switch-icon .on {
+    display: inline-block;
+}
+
+.active.switch .off, .active.switch-icon .off {
+    display: none;
+}
+
+.disabled.switch, .disabled.switch-icon {
+    cursor: default;
+    pointer-events: none;
+    opacity: .5;
+}
+
+.switch-icon .off, .switch-icon .on {
+    text-indent: 99%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-size: 1.1em;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}

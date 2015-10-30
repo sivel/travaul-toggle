@@ -1,0 +1,12 @@
+<html ng-app="ngApp">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script src="travaul-toggle.js"></script>
+<script src="demo.js"></script>
+<link rel="stylesheet" href="travaul-toggle.css">
+</head>
+<body ng-controller="mainController">
+<pre>{{ toggles }}</pre>
+<div ng-repeat="toggle in toggles"><travaul-toggle ng-model="toggle.value" ng-disabled="toggle.disabled"></travaul-toggle><br></div>
+</body>
+</html>
